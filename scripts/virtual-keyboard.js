@@ -7,6 +7,8 @@ let ctrl_left = document.querySelector('.ctrl_left');
 let ctrl_right = document.querySelector('.ctrl_right');
 let alt_left = document.querySelector('.alt_left');
 let alt_right = document.querySelector('.alt_right');
+// let arrow_up = document.querySelector('.arrow_up');
+// let arrow_down = document.querySelector('.arrow_down');
 // let body = document.querySelector('body');
 // let text_input = document.querySelector('.text');
 // let change_color = document.querySelector('.change_light_color');
@@ -20,14 +22,14 @@ for(let i = 0; i < keys.length; i++) {
 
 window.addEventListener('keydown', function(e) {
     for(let i = 0; i < keys.length; i++) {
-        if(e.key == keys[i].getAttribute('keyname' ) || e.key == keys[i].getAttribute('lowerCaseName')) {
+        if(e.key == keys[i].getAttribute('keyname') || e.key == keys[i].getAttribute('lowerCaseName')) {
             keys[i].classList.add('active')
         }
         if(e.code == 'Space') {
             spaceKey.classList.add('active')
         }
-        if (e.code !== 'Delete' && el.code !== 'Backspace') {
-            el.preventDefault();
+        if (e.code !== 'Delete' && e.code !== 'Backspace') {
+            e.preventDefault();
           }
         if(e.code == 'ShiftLeft') {
             shift_right.classList.remove('active')
@@ -55,7 +57,7 @@ window.addEventListener('keydown', function(e) {
 
 window.addEventListener('keyup', function(e) {
     for(let i = 0; i < keys.length; i++) {
-        if(e.key == keys[i].getAttribute('keyname' ) || e.key == keys[i].getAttribute('lowerCaseName')) {
+        if(e.key == keys[i].getAttribute('keyname') || e.key == keys[i].getAttribute('lowerCaseName')) {
             keys[i].classList.remove('active')
             keys[i].classList.add('remove')
         }

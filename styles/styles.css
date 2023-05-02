@@ -96,19 +96,28 @@ body {
     color: #fff;
     border-radius: 8px;
 }
+.keyboard_title{
+    margin-bottom: 60px;
+    color: #fff;
+    font-size: 26px;
+}
 
 .caps_lock_key.active{
     background-color: #c24848;
     color: #fff; 
 }
 
-.keys.active {
+.active {
     background-color: #333;
     color: #fff;
 }
+/* .keys.active {
+    background-color: #333;
+    color: #fff;
+} */
 
 .keys.remove {
-    animation: keys_animation 0.4s forwards ;
+    animation: keys_animation 0.2s forwards ;
 }
 
 @keyframes keys_animation {
@@ -116,13 +125,9 @@ body {
         background-color: #333;
         color: #fff;
     }
-    50% {
-        background-color: #6d6c6c;
-        color: #2c2a2a;
-    }
     100% {
-        background-color: #333;
-        color: #fff;
+        background-color: #bdbdbd;
+        color: #383838;
     }
 }
 
