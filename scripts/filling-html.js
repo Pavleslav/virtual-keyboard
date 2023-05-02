@@ -1,4 +1,5 @@
-let tilda = '`'
+let tilda = '`';
+let back_slash = "\\";
 const htmlBox = ` <div class="container">
 <div class="keyboard_title">RSS Virtual Keyboard</div>
 <div class="keyboard_wrapp">
@@ -34,7 +35,7 @@ const htmlBox = ` <div class="container">
             <div class="keys">P</div>
             <div class="keys">[</div>
             <div class="keys">]</div>
-            <div class="keys slash_key">\</div>
+            <div class="keys slash_key">${back_slash}</div>
             <div class="keys del_key">Del</div>
         </div>
         <div class="row">

@@ -111,10 +111,10 @@ body {
     background-color: #333;
     color: #fff;
 }
-/* .keys.active {
+.keys.active {
     background-color: #333;
     color: #fff;
-} */
+}
 
 .keys.remove {
     animation: keys_animation 0.2s forwards ;

@@ -28,8 +28,8 @@ window.addEventListener('keydown', function(e) {
         if(e.code == 'Space') {
             spaceKey.classList.add('active')
         }
-        if (e.code !== 'Delete' && e.code !== 'Backspace') {
-            e.preventDefault();
+        if (e.code !== 'Delete' && el.code !== 'Backspace') {
+            el.preventDefault();
           }
         if(e.code == 'ShiftLeft') {
             shift_right.classList.remove('active')
